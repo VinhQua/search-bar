@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(19, 19, 70);
+}
+
+.search-form{
+    margin:4rem auto;
+
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.highlight{
+    background-color: rgb(198, 214, 239);
+}
+.hide{
+    display: none;
+}
+.population{
+    font-size: 1rem;
+    position: relative;
+    right: 0;
+}
+input.search-bar{
+    outline: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+    border: 1rem solid rgb(243, 240, 240)    ;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 3rem;
+    margin: 0;
+}
+.place-list{
+    
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    font-size: 2rem;
+}
+.place-list li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+    text-transform: capitalize;
+}
+.place-list li:nth-child(odd){
+    transform:perspective(45px)  rotatex(-3deg)  translateY(2px) scale(1.005);
+    background-color:rgb(243, 240, 240) ;
+}
+.place-list li:nth-child(even){
+    transform:perspective(45px)  rotateX(3deg) translateY(0px) ;
+    background-color:rgb(243, 240, 240) ;
+}
